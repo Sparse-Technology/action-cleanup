@@ -2,7 +2,8 @@ name: "Cleanup Workspace"
 description: "Deletes all files in the work directory."
 runs:
   using: "docker"
-  image: "docker://ghcr.io/rtcamp/action-cleanup:v1.2.0"
+  image: "docker://m8ns.sparsetechnology.com:5050/sparse/images/action-cleanup:latest"
+  post-entrypoint: /entrypoint.sh
 branding:
   icon: delete
   color: red
